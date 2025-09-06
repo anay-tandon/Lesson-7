@@ -53,9 +53,15 @@ print(n_tuple[1][1]) # Output: 4
 # Accessing tuple elements using slicing
 my_tuple = ('p','r','o','g','r','a','m','i','z')
 
-# elements 2nd to 4th
-# elements beginning to 2nd
-# elements 8th to end
-# elements beginning to end
-# Changing tuple values
+print(my_tuple[1:5])
+print(my_tuple[:2])
+print(my_tuple[7:])
+print(my_tuple)
 
+# Changing tuple values
+my_tuple = list(my_tuple)
+for i in range(len(my_tuple)):
+    my_tuple[i] = my_tuple[i].upper()
+
+my_tuple = tuple(my_tuple)
+print(my_tuple)
